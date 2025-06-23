@@ -159,6 +159,7 @@ export default function CTA() {
               y: -2
             }}
             whileTap={{ scale: 0.98 }}
+            onClick={() => window.location.href = "https://doctors-orders-v1.vercel.app/"}
           >
             <span className="flex items-center gap-2">
               Start Free Trial

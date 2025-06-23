@@ -134,7 +134,7 @@ export default function Navigation() {
           >
             <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center shadow-sm overflow-hidden">
               <Image 
-                src="/ChatGPT Image Jun 12, 2025, 07_39_20 PM.png" 
+                src="/u9354481378_Modern_logo_design_compact_robot_head_in_circular_98ac6e0b-5d09-4f6a-980b-cfc4d4af2c9c_3.png" 
                 alt="Doctors Order Logo" 
                 width={40} 
                 height={40} 
@@ -174,19 +174,21 @@ export default function Navigation() {
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <motion.button
-              className="text-[#454440] font-medium px-4 py-2 rounded-lg hover:bg-[#f9fafb] transition-colors"
+              className="text-[#454440] font-medium hover:text-[#007AFF] transition-colors"
               variants={secondaryButtonVariants}
               whileHover="hover"
               whileTap="tap"
+              onClick={() => window.location.href = "https://doctors-orders-v1.vercel.app/"}
             >
               Sign In
             </motion.button>
             
             <motion.button
-              className="bg-gradient-to-r from-[#007AFF] to-[#4A9EFF] text-white font-semibold px-6 py-2.5 rounded-lg shadow-[0_4px_20px_rgba(0,122,255,0.25)]"
+              className="bg-gradient-to-r from-[#007AFF] to-[#4A9EFF] text-white font-semibold py-2 px-6 rounded-lg shadow-[0_4px_20px_rgba(0,122,255,0.25)]"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
+              onClick={() => window.location.href = "https://doctors-orders-v1.vercel.app/"}
             >
               Start Free Trial
             </motion.button>
@@ -254,7 +256,10 @@ export default function Navigation() {
                     className="w-full text-left px-4 py-3 text-[#454440] font-medium hover:text-[#007AFF] hover:bg-[#007AFF]/5 rounded-lg transition-colors"
                     whileHover={{ x: 4 }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => {
+                      setIsOpen(false);
+                      window.location.href = "https://doctors-orders-v1.vercel.app/";
+                    }}
                   >
                     Sign In
                   </motion.button>
@@ -263,7 +268,10 @@ export default function Navigation() {
                     className="w-full bg-gradient-to-r from-[#007AFF] to-[#4A9EFF] text-white font-semibold py-3 px-4 rounded-lg shadow-[0_4px_20px_rgba(0,122,255,0.25)]"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => {
+                      setIsOpen(false);
+                      window.location.href = "https://doctors-orders-v1.vercel.app/";
+                    }}
                   >
                     Start Free Trial
                   </motion.button>
